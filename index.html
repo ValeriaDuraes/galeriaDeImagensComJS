@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      Valéria's Blog
+    </header>
+    <div class="gallery">
+      <div class="main-img" onclick="openModal()">
+        <img
+          id="mainImg"
+          src="https://1.bp.blogspot.com/-7dwWSlTUmek/YLknydI1kiI/AAAAAAAACQg/HtzhnK0i3DIVaKCwmoZIswA-z1AftbbKACNcBGAsYHQ/s16000/uK6U2o%2B%25282%2529%2B%25282%2529.webp"
+          alt="Main Image"
+        />
+      </div>
+      
+      <div class="thumbnails">
+        <img
+          onclick="changeImage('https://1.bp.blogspot.com/-7dwWSlTUmek/YLknydI1kiI/AAAAAAAACQg/HtzhnK0i3DIVaKCwmoZIswA-z1AftbbKACNcBGAsYHQ/s16000/uK6U2o%2B%25282%2529%2B%25282%2529.webp')"
+          src="https://1.bp.blogspot.com/-7dwWSlTUmek/YLknydI1kiI/AAAAAAAACQg/HtzhnK0i3DIVaKCwmoZIswA-z1AftbbKACNcBGAsYHQ/s16000/uK6U2o%2B%25282%2529%2B%25282%2529.webp"
+          alt="Thumbnail 1"
+        />
+        <img
+          onclick="changeImage('https://1.bp.blogspot.com/-aq8oXEQ4qTA/YLkn-QrWFXI/AAAAAAAACQs/U5R1MAyzV_c2eeBgvJTjBAAaghHqJQyiACNcBGAsYHQ/s16000/uK6U2o%2B%25282%2529%2B%25281%2529.jpg')"
+          src="https://1.bp.blogspot.com/-aq8oXEQ4qTA/YLkn-QrWFXI/AAAAAAAACQs/U5R1MAyzV_c2eeBgvJTjBAAaghHqJQyiACNcBGAsYHQ/s16000/uK6U2o%2B%25282%2529%2B%25281%2529.jpg"
+          alt="Thumbnail 2"
+        />
+
+        <img
+          onclick="changeImage('https://1.bp.blogspot.com/-5tEP3dmpx74/YLkn8QJAU9I/AAAAAAAACQo/USJdR8EkHQMSBUspQhJW8mdQbqWMoqAmACNcBGAsYHQ/s16000/uK6U2o%2B%25282%2529%2B%25281%2529.webp')"
+          src="https://1.bp.blogspot.com/-5tEP3dmpx74/YLkn8QJAU9I/AAAAAAAACQo/USJdR8EkHQMSBUspQhJW8mdQbqWMoqAmACNcBGAsYHQ/s16000/uK6U2o%2B%25282%2529%2B%25281%2529.webp"
+          alt="Thumbnail 3"
+        />
+        <!-- Add more thumbnails as needed -->
+      </div>
+    </div>
+
+    <!-- Adicione isso no final do seu corpo HTML -->
+    <div class="modal" id="myModal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+        <div class="slick-carousel">
+          <div>
+            <img
+              src="https://1.bp.blogspot.com/-7dwWSlTUmek/YLknydI1kiI/AAAAAAAACQg/HtzhnK0i3DIVaKCwmoZIswA-z1AftbbKACNcBGAsYHQ/s16000/uK6U2o%2B%25282%2529%2B%25282%2529.webp"
+              alt="Image 1"
+            />
+          </div>
+          <div>
+            <img
+              src="https://1.bp.blogspot.com/-aq8oXEQ4qTA/YLkn-QrWFXI/AAAAAAAACQs/U5R1MAyzV_c2eeBgvJTjBAAaghHqJQyiACNcBGAsYHQ/s16000/uK6U2o%2B%25282%2529%2B%25281%2529.jpg"
+              alt="Image 2"
+            />
+          </div>
+          <div>
+            <img
+              src="https://1.bp.blogspot.com/-5tEP3dmpx74/YLkn8QJAU9I/AAAAAAAACQo/USJdR8EkHQMSBUspQhJW8mdQbqWMoqAmACNcBGAsYHQ/s16000/uK6U2o%2B%25282%2529%2B%25281%2529.webp"
+              alt="Image 3"
+            />
+          </div>
+          <!-- Adicione mais imagens conforme necessário -->
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; Copyright Valéria Durães - 2024</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    ></script>
+
+  </body>
+</html>

@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: #cdcdcd;
+}
+
+header {
+  padding: 40px;
+  color: #faf60d;
+  background-color: #000;
+  font-weight: bold;
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+  border-bottom: 2px solid #fff;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-img {
+  margin: 20px;
+}
+
+.thumbnails {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.thumbnails img {
+  width: 100px;
+  height: auto;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.main-img img {
+  transition: opacity 0.3s ease-out;
+  height: 550px;
+  width: 900px;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+/* Estilo para o modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 36px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Estilo para o carrossel */
+.slick-carousel {
+  width: 80%;
+}
+
+.slick-slide img {
+  max-width: 80%; /* Defina a largura máxima das imagens */
+  max-height: 80vh; /* Defina a altura máxima das imagens */
+  margin: 0 auto; /* Centralize as imagens horizontalmente */
+}
+
+footer {
+  padding: 30px;
+  color: #faf60d;
+  background-color: #000;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  border-top: 2px solid #fff;
+  margin-top: 20px;
+}
